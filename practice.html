@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        
+    }
+    #layout{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    
+    }
+    .cont{
+        border: 1px solid blue;
+    }
+    .cont1,.cont7{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .cont2,.cont3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+
+    }
+    .cont5{
+        grid-row-start: 2;
+        grid-row-end: 5;
+
+    }
+
+</style>
+<body>
+    <div id="layout">
+        <div class="cont cont1 ">1</div>
+        <div class="cont cont2">2</div>
+        <div class="cont cont3">3</div>
+        <div class="cont cont5">5</div>
+        <div class="cont cont7">7</div>
+        
+
+    </div>
+    
+</body>
+</html>
